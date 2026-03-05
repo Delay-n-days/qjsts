@@ -1,0 +1,25 @@
+{
+  "name": "qjs-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "build:qjs": "node scripts/build-qjs.js",
+    "run:qjs": "./qjs_runtime/qjs -m ./qjs_runtime/main.js",
+    "build:node": "node scripts/build-node.js",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/parser": "^8.56.1",
+    "esbuild": "^0.20.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-n": "^17.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "koffi": "^2.15.1"
+  }
+}

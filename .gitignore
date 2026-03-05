@@ -1,0 +1,24 @@
+# 依赖
+node_modules/
+
+# 编译产物
+dist-node/
+
+
+
+# 编译后的业务逻辑（由 build:qjs 生成）
+qjs_runtime/main.js
+
+# 日志
+*.log
+npm-debug.log*
+
+# 编辑器
+.vscode/
+.idea/
+*.suo
+*.user
+
+# 系统
+.DS_Store
+Thumbs.db
